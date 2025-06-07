@@ -12,20 +12,6 @@ Identificar patrones y relaciones en los datos que permitan:
 
 ---
 
-## 📁 Estructura del Proyecto
-
-```
-
-.
-├── churn\_analysis.ipynb       # Notebook con el análisis completo
-├── README.md                  # Este archivo
-├── data/                      # Carpeta con los datasets originales (privados)
-├── outputs/                   # Carpeta con los gráficos generados
-
-````
-
----
-
 ## ⚙️ Requisitos
 
 Instala las librerías necesarias con:
@@ -40,12 +26,7 @@ pip install pandas numpy matplotlib seaborn
 
 1. Clona este repositorio:
 
-```bash
-git clone https://github.com/tu_usuario/churn-analysis.git
-cd churn-analysis
-```
-
-2. Abre el notebook `churn_analysis.ipynb` en Jupyter o Google Colab.
+2. Abre el notebook en Jupyter o Google Colab.
 
 3. Ejecuta las celdas paso a paso.
 
