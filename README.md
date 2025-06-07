@@ -1,47 +1,90 @@
-# Telecom X – Análisis de Evasión de Clientes
+# 📊 Análisis de Evasión de Clientes (Churn)
 
-![Portada](images/cover.png)
-
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)  
-[![Licence: MIT](https://img.shields.io/badge/licence-MIT-green.svg)](LICENSE)  
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<tu-usuario>/TelecomX-Churn-Analysis/blob/main/notebooks/01_churn_analysis.ipynb)
-
-## Tabla de Contenido
-1. [Propósito](#propósito)
-2. [Estructura del Proyecto](#estructura-del-proyecto)
-3. [Ejemplos de Gráficos e Insights](#ejemplos-de-gráficos-e-insights)
-4. [Instrucciones de Ejecución](#instrucciones-de-ejecución)
-5. [Tecnologías Utilizadas](#tecnologías-utilizadas)
-6. [Contribuyentes](#contribuyentes)
-7. [Licencia](#licencia)
+Este proyecto analiza los datos de clientes de una empresa de telecomunicaciones con el objetivo de entender los factores asociados a la evasión (churn), es decir, aquellos clientes que deciden cancelar el servicio.
 
 ---
 
-## Propósito
+## 🧠 Objetivo
 
-Este repositorio contiene el análisis exploratorio de datos (EDA) del **Proyecto Telecom X** cuyo objetivo es **identificar los factores que impulsan la deserción (churn) de clientes**.  
-Los hallazgos servirán de insumo para que el equipo de Data Science construya modelos predictivos y diseñe estrategias de retención.
+Identificar patrones y relaciones en los datos que permitan:
+- Predecir la evasión de clientes.
+- Proponer estrategias para retenerlos.
 
 ---
 
-## Estructura del Proyecto
+## 📁 Estructura del Proyecto
 
-```text
-TelecomX-Churn-Analysis/
-│
-├── data/                         # Datos brutos y procesados
-│   └── TelecomX_Data.json
-│
-├── notebooks/                    # Notebooks Jupyter/Colab
-│   └── 01_churn_analysis.ipynb
-│
-├── reports/                      # Informes generados
-│   └── EDA_insights.md
-│
-├── images/                       # Figuras para el README / reportes
-│   ├── churn_rate_by_contract.png
-│   ├── heatmap_correlations.png
-│   └── monthly_churn_trend.png
-│
-├── requirements.txt              # Dependencias de Python
-└── README.md
+```
+
+.
+├── churn\_analysis.ipynb       # Notebook con el análisis completo
+├── README.md                  # Este archivo
+├── data/                      # Carpeta con los datasets originales (privados)
+├── outputs/                   # Carpeta con los gráficos generados
+
+````
+
+---
+
+## ⚙️ Requisitos
+
+Instala las librerías necesarias con:
+
+```bash
+pip install pandas numpy matplotlib seaborn
+````
+
+---
+
+## 🚀 Cómo usar este proyecto
+
+1. Clona este repositorio:
+
+```bash
+git clone https://github.com/tu_usuario/churn-analysis.git
+cd churn-analysis
+```
+
+2. Abre el notebook `churn_analysis.ipynb` en Jupyter o Google Colab.
+
+3. Ejecuta las celdas paso a paso.
+
+---
+
+## 🧹 Limpieza y Transformación de Datos
+
+* Se eliminaron valores nulos y filas con evasión "desconocido".
+* Se convirtieron variables categóricas binarizadas (sí/no → 1/0).
+* Se estandarizaron nombres de columnas para facilitar el análisis.
+
+---
+
+## 📊 Análisis Exploratorio
+
+### 🔸 Distribución general de evasión
+
+### 🔸 Comparación por Género
+
+### 🔸 Contrato vs Evasión
+
+### 🔸 Método de pago
+
+### 🔸 Tenure y Total Charges
+
+---
+
+## 🔍 Conclusiones
+
+* Los contratos mensuales tienen mayor probabilidad de evasión.
+* El método de pago electrónico (sin factura) está relacionado con mayor churn.
+* Los clientes con más antigüedad tienden a quedarse.
+
+---
+
+## 💡 Recomendaciones
+
+* Promover contratos anuales o bianuales con beneficios extra.
+* Incentivar pagos con factura y automatizados.
+* Ofrecer retención proactiva a clientes nuevos en los primeros meses.
+
+---
